@@ -1,3 +1,9 @@
+function playPurchaseSound() {
+    var audio = document.getElementById("purchaseAudio");
+    audio.play();
+}
+
+
 //  tab switching code
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -15,14 +21,6 @@ tabs.forEach((tab, index) => {
 // Set Sign Up tab as active by default
 tabs[0].click();
 });
-
-
-
-function playPurchaseSound() {
-    var audio = document.getElementById("purchaseAudio");
-    audio.play();
-}
-
 
 
 
