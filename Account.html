@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneSage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+
+	<!--Navigation bar-->
+	<nav>
+		<img src="Images/Menu.png" id="toggleNavButton" height="30px" width="30px"></img>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Products.html" >Products</a>
+			      <ul class="dropdown">
+					<li><a href="Products.html">Iphone</a></li>
+					<li><a href="Products.html">Samsung</a></li>
+					<li><a href="Products.html">Oppo</a></li>
+				  </ul>
+			</li>
+			<li><a href="About us.html">About Us</a></li>
+			<li><a href="Account.html" class="active">Account</a></li>
+            <li><a href="CheckOut.html">Check Out</a></li>
+		</ul>
+	</nav>
+
+	<!--Header area-->
+	<header> 
+		<h1>PhoneSage</h1>
+	</header>
+
+	
+	<!--main area-->
+	<main>
+		<div class="container">
+			<div class="form">
+			  <ul class="tab-group">
+				<li class="tab active"><a href="#signup">Sign Up</a></li>
+				<li class="tab"><a href="#login">Log In</a></li>
+			  </ul>
+		
+			  <div class="tab-content">
+				<div id="signup">   
+					<h1>Sign Up for Free</h1>
+					<form action="" method="post">
+					  <div class="top-row">
+						<div class="field-wrap">
+						  <label>First Name<span class="req">*</span></label>
+						  <input type="text" required autocomplete="off" />
+						</div>
+						<div class="field-wrap">
+						  <label>Last Name<span class="req">*</span></label>
+						  <input type="text" required autocomplete="off" />
+						</div>
+					  </div>
+					  <div class="field-wrap">
+						<label>Email Address<span class="req">*</span></label>
+						<input type="email" required autocomplete="off" />
+					  </div>
+					  <div class="field-wrap">
+						<label>Set A Password<span class="req">*</span></label>
+						<input type="password" required autocomplete="off" />
+					  </div>
+					  <button type="submit" class="button button-block">Get Started</button>
+					</form>
+				</div>
+				
+				<div id="login">   
+					<h1>Welcome Back!</h1>
+					<form action="" method="post">
+					  <div class="field-wrap">
+						<label>Email Address<span class="req">*</span></label>
+						<input type="email" required autocomplete="off" />
+					  </div>
+					  <div class="field-wrap">
+						<label>Password<span class="req">*</span></label>
+						<input type="password" required autocomplete="off" />
+					  </div>
+					  <p class="forgot"><a href="#">Forgot Password?</a></p>
+					  <button class="button button-block">Log In</button>
+					</form>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	</main>
+
+
+  <!--Footer Area-->
+  <footer>
+	<p>Sign Up For Deals!</p>
+	<P>Follow Us</P>
+  </footer>
+
+<script src="Filters.js"></script>
+
+</body>
+</html>
